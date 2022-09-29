@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateOrderRequest xmlns="http://schemas.datacontract.org/2004/07/MundiPagg.One.Service.DataContracts" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+   <AmountInCents>58990</AmountInCents>
+  <InstallmentCount>10</InstallmentCount>
+   <AmountInCentsToConsiderPaid>0</AmountInCentsToConsiderPaid>
+   <CurrencyIsoEnum>BRL</CurrencyIsoEnum>
+   <EmailUpdateToBuyerEnum i:nil="true" />
+   <MerchantKey>66e76d77-14y7-4578-b070-1f326bc1d223</MerchantKey>
+   <OrderReference>y78bc6k-701-43af-9313f-9c4535dbdaebfd</OrderReference>
+   <RequestKey>00000000-0000-0000-0000-000000000000</RequestKey>
+   <Retries i:nil="true" />
+   <Buyer>
+      <BuyerKey>00000000-0000-0000-0000-000000000000</BuyerKey>
+      <BuyerReference i:nil="true" />
+      <CreateDateInMerchant i:nil="true" />
+      <Email>usarioecommerce@stone.com</Email>
+      <FacebookId i:nil="true" />
+      <GenderEnum>F</GenderEnum>
+      <HomePhone />
+      <IpAddress i:nil="true" />
+      <LastBuyerUpdateInMerchant i:nil="true" />
+      <MobilePhone>55(14)999999999</MobilePhone>
+      <Name>Usario Ecommerce</Name>
+      <PersonTypeEnum>Person</PersonTypeEnum>
+      <TaxDocumentNumber>12345678911</TaxDocumentNumber>
+      <TaxDocumentTypeEnum>CPF</TaxDocumentTypeEnum>
+      <TwitterId i:nil="true" />
+      <WorkPhone i:nil="true" />
+      <BuyerAddressCollection>
+         <BuyerAddress>
+            <AddressTypeEnum>Billing</AddressTypeEnum>
+            <City>São Paulo</City>
+            <Complement>123</Complement>
+            <CountryEnum>Brazil</CountryEnum>
+            <District>Vila Rosali</District>
+            <Number>456</Number>
+            <State>SP</State>
+            <Street>Avenida Paulista</Street>
+            <ZipCode>25520171</ZipCode>
+         </BuyerAddress>
+      </BuyerAddressCollection>
+   </Buyer>
+   <ShoppingCartCollection>
+      <ShoppingCart>
+         <FreightCostInCents>0</FreightCostInCents>
+         <ShoppingCartItemCollection>
+            <ShoppingCartItem>
+               <Description>Calça Feminina</Description>
+               <ItemReference>221298</ItemReference>
+               <Name>Calça Feminina</Name>
+               <Quantity>1</Quantity>
+               <TotalCostInCents>58990</TotalCostInCents> // os valores devem ser igualados
+               <UnitCostInCents>5890</UnitCostInCents> // os valores devem ser igualados
+            </ShoppingCartItem>
+         </ShoppingCartItemCollection>
+      </ShoppingCart>
+   </ShoppingCartCollection>
+   <CreditCardTransactionCollection>
+      <CreditCardTransaction>
+         <AmountInCents>5899</AmountInCents> // os valores devem ser igualados
+         <CaptureDelayInMinutes>0</CaptureDelayInMinutes>
+         <CreditCardBrandEnum>Mastercard</CreditCardBrandEnum>
+         <CreditCardNumber>XXXXXXXXXXXXXXXX</CreditCardNumber>
+         <CreditCardOperationEnum>AuthOnly</CreditCardOperationEnum>
+         <ExpMonth>19</ExpMonth>
+         <ExpYear>2030</ExpYear>
+         <HolderName>Usario Ecommerce</HolderName>
+         <IataAmountInCents>0</IataAmountInCents>
+         <InstallmentCount>8</InstallmentCount>
+         <InstantBuyKey>00000000-0000-0000-0000-000000000000</InstantBuyKey>
+         <PaymentMethodCode>0</PaymentMethodCode>
+         <SecurityCode>XXX</SecurityCode>
+         <ThirdPartyMerchantKey>00000000-0000-0000-0000-000000000000</ThirdPartyMerchantKey>
+         <TransactionReference>f68bc6ff-5e01-43af-9a3f-9c12dbdaebfd</TransactionReference>
+         <Recurrency i:nil="true" />
+      </CreditCardTransaction>
+   </CreditCardTransactionCollection>
+   <BoletoTransactionCollection />
+</CreateOrderRequest>
